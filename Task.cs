@@ -279,7 +279,8 @@ namespace ServicioTecnicoReporte
                 //path pruebas
                 //ReportViewer1.LocalReport.ReportPath = "C:\\CorreoLecturasPDF\\ReporteServicio.rdlc";
                 //path produccion
-                ReportViewer1.LocalReport.ReportPath = "C:\\LecturasRPT\\ReporteServicio.rdlc";
+                //ReportViewer1.LocalReport.ReportPath = "C:\\LecturasRPT\\ReporteServicio.rdlc";
+                ReportViewer1.LocalReport.ReportPath = Configuracion.GetConfiguracion("Archivo Reporte");
 
                 //ReportViewer1.LocalReport.
 

@@ -7,14 +7,14 @@
     <framework targetVersion="4.6.1" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="ServicioTecnicoReporte.exe.manifest" size="45418">
+    <dependentAssembly dependencyType="install" codebase="ServicioTecnicoReporte.exe.manifest" size="62438">
       <assemblyIdentity name="ServicioTecnicoReporte.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>yNgkHaMQ7XKGJetardYEsPiaV6sHpURimmtVCkrN3pQ=</dsig:DigestValue>
+        <dsig:DigestValue>Pr7te6LBd9ZIpoXe/9ZfIEjc8UNPSpKDIIoGw8wASKE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
