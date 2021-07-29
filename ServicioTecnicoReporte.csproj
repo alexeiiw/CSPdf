@@ -48,10 +48,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>6DD5F1E37826CD135E5E3262528C968093F3B29C</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>C3FC52B31BA600B8D1864F28B5AE585EB3C2BB43</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>ServicioTecnicoReporte_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>ServicioTecnicoReporte_1_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -147,7 +147,7 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="ServicioTecnicoReporte_TemporaryKey.pfx" />
+    <None Include="ServicioTecnicoReporte_1_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="SqlServerTypes\readme.htm" />

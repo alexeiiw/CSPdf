@@ -19,6 +19,9 @@ namespace ServicioTecnicoReporte
             
             //int reporteID = 1651653068;
             DataTable recordToProcessDT = new DataTable();
+
+            int intContador = 0;
+
             do
             {
                 string reporteId ="";
@@ -138,8 +141,19 @@ namespace ServicioTecnicoReporte
                            
                         }
 
-                      
+                        intContador += 1;
 
+                        Console.WriteLine("Se ha procesado el archivo No. " + intContador);
+                        
+                        if (intContador == 350)
+                        {
+                            // Collect all generations of memory.
+                            GC.Collect();
+                            Console.WriteLine("Memory used after full collection:   {0:N0}",
+                                              GC.GetTotalMemory(true));
+
+                            //intContador = 0;
+                        }
 
                     }
 
@@ -153,7 +167,13 @@ namespace ServicioTecnicoReporte
             while (recordToProcessDT.Rows.Count > 0);
 
             Console.WriteLine("No hay mas registros para procesar");
-           
+
+            EMail objCorreo = new EMail();
+            string strSmtpServer = Configuracion.GetConfiguracion("SMTP Server");
+            string strFromMail = Configuracion.GetConfiguracion("From Email");
+            string strNameMail = Configuracion.GetConfiguracion("Nombre Email");
+            objCorreo.EnviarCorreoInternoCanella(strFromMail, strNameMail, strSmtpServer, "aarrecis@canella.com.gt", "Informe de Envío de Correos - PROSONE",
+                "Se han procesado un total de " + intContador + " Archivos!");
 
         }
 
@@ -315,6 +335,8 @@ namespace ServicioTecnicoReporte
                     fs.Write(bytes, 0, bytes.Length);
                 }
 
+                // Destruye el objeto
+                ReportViewer1.Dispose();
             }
             catch (Exception ex) {
                 reportePdf = "";

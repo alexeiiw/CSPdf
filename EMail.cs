@@ -35,7 +35,7 @@ namespace ServicioTecnicoReporte
                 mail.To.Add(ToMail);
                 //mail.CC.Add("lecturas@canella.com.gt");
                 //mail.CC.Add("fhernandez@canella.com.gt");
-                mail.CC.Add("mvargas@canella.com.gt");
+                //mail.CC.Add("mvargas@canella.com.gt");
                 // mail.To.Add("atobar@canella.com.gt");
 
                 mail.Subject = SubjectMail;
@@ -69,7 +69,7 @@ namespace ServicioTecnicoReporte
             }
             return res;
 
-            return true;
+            //return true;
 
         }
 
